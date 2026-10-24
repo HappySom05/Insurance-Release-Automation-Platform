@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "Cleaning old logs..."
+echo "Removing old log files..."
 
-find . -name "*.log" -type f -delete
+find . -name "*.log" -mtime +7 -delete
 
 echo "Cleanup Completed"

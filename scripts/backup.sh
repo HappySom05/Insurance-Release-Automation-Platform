@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Starting backup..."
+DATE=$(date +%Y%m%d)
 
 mkdir -p backup
 
-cp -r . backup/
+cp -r app backup/app_$DATE
 
-echo "Backup Completed"
+echo "Backup Completed Successfully"

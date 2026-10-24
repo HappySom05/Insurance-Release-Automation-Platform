@@ -3,28 +3,39 @@ pipeline {
 
     stages {
 
+        stage('Checkout') {
+            steps {
+                echo 'Pulling Source Code'
+            }
+        }
+        stage('Security Scan') {
+            steps {
+                echo 'Running Security Scan'
+            }
+        }
         stage('Build') {
             steps {
-                echo 'Building Application...'
+                echo 'Building Application'
             }
         }
 
-        stage('Test') {
+        stage('Testing') {
             steps {
-                echo 'Running Tests...'
+                echo 'Executing Test Cases'
             }
         }
 
         stage('Docker Build') {
             steps {
-                echo 'Building Docker Image...'
+                echo 'Building Docker Image'
             }
         }
 
-        stage('Deploy') {
+        stage('Deployment') {
             steps {
-                echo 'Deploying Application...'
+                echo 'Deploying to Kubernetes'
             }
         }
+
     }
 }

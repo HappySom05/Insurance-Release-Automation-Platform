@@ -23,3 +23,27 @@ Kubernetes Cluster
     │
     ▼
 Insurance Release Automation Platform
+
+
+
+Developer
+    │
+    ▼
+GitHub
+    │
+    ▼
+Jenkins
+    │
+ ┌──┼───────┐
+ │  │       │
+ ▼  ▼       ▼
+Build Test Docker
+    │
+    ▼
+Docker Registry
+    │
+    ▼
+Kubernetes
+    │
+    ▼
+Insurance Application
