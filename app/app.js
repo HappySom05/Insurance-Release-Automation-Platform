@@ -1,0 +1,1 @@
+console.log("Insurance Release Automation Platform Started");
