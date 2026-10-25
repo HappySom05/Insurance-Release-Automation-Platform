@@ -16,18 +16,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Application'
+                // maven build
             }
         }
 
         stage('Testing') {
             steps {
                 echo 'Executing Test Cases'
+                //unit testing
             }
         }
 
         stage('Docker Build') {
             steps {
                 echo 'Building Docker Image'
+                //docker image creation
             }
         }
 

@@ -1,1 +1,1 @@
-console.log("Insurance Release Automation Platform Started");
+console.log("Insurance Release Automation Platform Loaded");
