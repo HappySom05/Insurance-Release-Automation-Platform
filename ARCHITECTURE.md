@@ -47,3 +47,21 @@ Kubernetes
     │
     ▼
 Insurance Application
+
+GitHub
+   ↓
+Jenkins
+   ↓
+SonarQube
+   ↓
+Trivy
+   ↓
+Docker
+   ↓
+Terraform
+   ↓
+Kubernetes
+   ↓
+Prometheus
+   ↓
+Grafana
