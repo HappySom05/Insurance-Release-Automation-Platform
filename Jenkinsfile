@@ -10,7 +10,8 @@ pipeline {
         }
         stage('Security Scan') {
             steps {
-                echo 'Running Security Scan'
+                echo 'Running SonarQube Analysis'
+                echo 'Running Trivy Scan'
             }
         }
         stage('Build') {
