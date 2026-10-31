@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: insurance-app-dev
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: insurance-app-dev
+
+  template:
+    metadata:
+      labels:
+        app: insurance-app-dev
+
+    spec:
+      containers:
+      - name: insurance-app
+        image: insurance-app:v1
+
+        ports:
+        - containerPort: 80
