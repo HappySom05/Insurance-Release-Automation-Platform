@@ -40,7 +40,11 @@ pipeline {
             }
         }
 
-
+        stage('QA Approval') {
+            steps {
+                echo 'Waiting for QA Sign Off'
+            }
+        }
         stage('Deployment') {
             steps {
                 echo 'Deploying to Kubernetes'
