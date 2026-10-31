@@ -34,6 +34,12 @@ pipeline {
                 //docker image creation
             }
         }
+        stage('Docker Push') {
+            steps {
+                echo 'Pushing Docker Image to Registry'
+            }
+        }
+
 
         stage('Deployment') {
             steps {

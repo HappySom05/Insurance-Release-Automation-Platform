@@ -1,0 +1,15 @@
+groups:
+- name: insurance-alerts
+
+  rules:
+  - alert: HighCPUUsage
+
+    expr: cpu_usage > 80
+
+    for: 2m
+
+    labels:
+      severity: warning
+
+    annotations:
+      summary: High CPU Utilization Detected
