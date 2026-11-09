@@ -20,4 +20,17 @@ A DevOps project designed to automate software build, testing, security validati
 
 Insurance Release Automation Platform is a DevOps-based project designed to automate application build, testing and deployment processes.
 
+## Practical Implementation
+
+Successfully implemented and validated:
+
+- Docker Image Build
+- Docker Container Deployment
+- Terraform Provisioning Workflow
+- Kubernetes Deployment
+- Kubernetes Service
+- ConfigMap
+- Secret
+- Ingress
+- Horizontal Pod Autoscaler (HPA)
 ...
